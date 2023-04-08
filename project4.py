@@ -1,7 +1,7 @@
 # Name: Aiden Nelson
 # SIUE EID: 800742353
 # Date of Start: 4/5/2023
-# Date of Completion: 4/5/2023
+# Date of Completion: 4/8/2023
 
 # This program will calculate the optimal solution to a knapsack problem using a dynamic programming approach.
 
@@ -118,6 +118,8 @@ def main():
                 print("\nInvalid weight bound (must be between 1 and ", W, "), please enter a new weight bound: ", end="", sep="")
                 newWeight = int(input())
             
+            table = computeTable(items, newWeight)
+
             printOptimalSolution(table, items, newWeight)
 
             # Ask if user would want to use a different weight bound
