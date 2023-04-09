@@ -39,9 +39,10 @@ or 'n' (to exit the program)
 
 -----------------------------------------------------------------
 
-Depending upon your choice, you will either enter a new weight bound, 
-which will recompute the solutions matrix and return the ideal set, or
-you will exit the program.
+Depending upon your choice, you will either enter a new weight bound,
+(which has to be greater than zero, by the way) which will recompute 
+the solutions matrix and return the ideal set, or you will exit the 
+program.
 
 -----------------------------------------------------------------
 

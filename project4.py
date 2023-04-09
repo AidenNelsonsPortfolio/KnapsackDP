@@ -111,16 +111,17 @@ def main():
 
         while(choice == 'y'):
             # Ask user to enter a new weight bound
-            print("\nEnter a new weight bound: ", end="")
+            print("\nEnter a new weight bound, current is", W, ": ", end="")
             newWeight = int(input())
 
-            while newWeight < 1 or newWeight > W:
-                print("\nInvalid weight bound (must be between 1 and ", W, "), please enter a new weight bound: ", end="", sep="")
+            while newWeight < 1:
+                print("\nInvalid weight bound (must be greater than 1), please enter a new weight bound (current is ", W, " ): ", end="", sep="")
                 newWeight = int(input())
             
-            table = computeTable(items, newWeight)
+            W = newWeight
+            table = computeTable(items, W)
 
-            printOptimalSolution(table, items, newWeight)
+            printOptimalSolution(table, items, W)
 
             # Ask if user would want to use a different weight bound
             choice = getChoice()
