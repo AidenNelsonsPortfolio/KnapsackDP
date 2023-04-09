@@ -15,7 +15,7 @@ The project has been built to find the optimal solution to the
 To begin this program, ensure that the project4.py file is in the 
 same directory as the 'knapsack.txt' file that holds the number of 
 items and the target weight on the first line, and then, on each 
-subsequent line k, the weight and value of item k.
+subsequent line k, the weight and value of item k (in that order).
 
 -----------------------------------------------------------------
 
